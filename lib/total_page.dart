@@ -13,6 +13,30 @@ class TotalPage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+            Padding(
+            padding: EdgeInsets.only(left: 100),
+            child: Text(
+              'Books: ${c.books.value.toString()}',
+              style: TextStyle(
+                fontSize: 30,
+                color: Colors.black,
+              ),
+            ),
+          ),
+          SizedBox(height: 10,),
+           Padding(
+            padding: EdgeInsets.only(left: 100),
+            child: Text(
+              'Pens: ${c.pens.value.toString()}',
+              style: TextStyle(
+                fontSize: 30,
+                color: Colors.black,
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
           const Padding(
             padding: EdgeInsets.only(left: 100),
             child: Text(
